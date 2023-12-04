@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+div.wrapper {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header,
+footer {
+    background-color: darkslategrey;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 0;
+}
+
+main.main-content {
+    background-color: rgb(230, 248, 247);
+}
+
+.card {
+    background: #ffffff;
+    color: #495057;
+    margin: 20px 0;
+    padding: 30px 30px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 40px;
+}
+
+.card p {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px;
+}
+
+main.main-content>p:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 30px;
+}
+
+div.buttons {
+    background-color: rgb(120, 166, 155);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+div.buttons button {
+    text-align: center;
+    font-size: 20px;
+    width: 5.5em;
+    padding: 5px 10px;
+}
+
+div.buttons button:hover {
+    background-color: #2f4f4f;
+    color: #f0f8ff;
+    cursor: pointer;
+}
+
+form {
+    border: 1px inset rgb(181, 182, 182);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(223, 243, 236);
+}
+
+form div {
+    margin: 10px 0;
+}
+
+form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form input:not([type="checkbox"], [type="radio"]),
+form textarea {
+    width: 100%;
+}
+
+
+form span {
+    font-size: .7em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+fieldset {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+aside.main-sidebar {
+    background-color: rgb(203, 245, 231);
+}
+
+nav.main-nav,
+main.main-content,
+aside.main-sidebar {
+    padding: 15px;
+}
+
+nav.main-nav ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav.main-nav ul li {
+    border-bottom: 1px solid darkgreen;
+}
+
+
+nav.main-nav a:link,
+nav.main-nav a:visited {
+    text-decoration: none;
+    display: block;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a:active {
+    background-color: darkgreen;
+    color: lightgreen;
+}
+
+
+dt {
+    font-weight: bold;
+    font-size: medium;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-centre {
+    display: block;
+    margin: auto;
+}
+
+figure {
+    background-color: #e9e9d0;
+    border: 2px solid #36270F;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+    color: rgb(23, 49, 1);
+}
+
+footer {
+    clear: both;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.card-full {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-full section {
+    width: 48%;
+}
+
+
+main div span {
+    cursor: pointer;
+}
+
+.txtWeight {
+    font-weight: bold;
+}
+
+.txtStyle {
+    font-style: italic;
+}
+
+.txtUnderline {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        background-color: darkkhaki;
+        color: rgb(87, 83, 28);
+    }
+
+}
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+
+    header {
+        background-color: darkorange;
+    }
+
+    main.main-content {
+        width: 70%;
+        float: left;
+    }
+
+    aside.main-sidebar {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    nav.main-nav {
+        width: 20%;
+        float: left;
+    }
+
+    main.main-content {
+        width: 60%;
+        float: left;
+    }
+
+    aside.main-sidebar {
+        width: 20%;
+        float: left;
+    }
+
+}
+
+@media print {
+
+    header,
+    main.main-content,
+    aside.main-sidebar,
+    footer {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+}
